@@ -1,18 +1,26 @@
 #landing{
     height: 100vh;
-    /*background-image: url("images/orb.jpeg");*/
-    background-color: black;
+    background-image: url("images/orb.jpeg");
+   
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     z-index: -1;
 }
-
+#work{
+    background-color:rgb(61,61,61);;
+}
+#intro{
+    margin-top: 50px;
+}
 body{
 	background-color: black;
 	color: rgba(255,255,255,0.8);
 }
 #maintext{
     margin-top: 30vh;
+}
+p1{
+    height: 350px;
 }

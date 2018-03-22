@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="X-UA-compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	 <!-- Compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 <!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js">
-</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script>
+			$(document).ready(function(){
+				$('.parallax').parallax();});
+	</script>
 
 	<title>exo 3 portfolio</title>
 </head>
 <body>
+		
 	<!--section 0-->
 	<div class="navbar-fixed">
 		<nav class="black">
 			<div class="container">
 				<div class="nav-wrapper">
-					<a href="#" class="brand-logo">Seyvin blog</a>
-					<ul class="right hide-on-med-and-down">
+					<a href="#intro" class="brand-logo">Seyvin blog</a>
+					<ul class="right hide-on-med-and-down" id="navlist">
 						<li><a href="#landing">Home</a></li>
 						<li><a href="#intro">About me</a></li>
 						<li><a href="#work">Projects</a></li>
@@ -29,69 +37,52 @@
 	</div>
 	<!--section 1-->
 	<!--premier truc kon voit dans la page-->
-	<div id="landing" class="section" >
+	<div class="section" id="landing" >
 		<h5 class="center" id="maintext">My name is</h5>
 		<h1 class="center" style="color:aliceblue"><b>Seyvin</b></h1>
 		<h6 class="center" id="maintext">A Web Develloper</h6>
 	</div>
-	
-	
-	<!-- bouttons ki bougent pas pour facebook etc.. --><!-- has bugs -->
-<div class="fixed-action-btn vertical">
-    <a class="btn-floating btn-large  blue-grey darken-4">
-        <i class="fa fa-globe"></i>
-    </a>
-    <ul>
-        <li><a class="btn-floating  blue darken-4"><i class="fa fa-facebook"></i></a></li>
-        <li><a class="btn-floating cyan lighten-1"><i class="fa fa-twitter"></i></a></li>
-        <li><a class="btn-floating grey darken-3"> <i class="fa fa-github"></i></a></li>
-        <li><a class="btn-floating blue-grey lighten-1"><i class="fa fa-linkedin"></i></a></li>
-    </ul>
-</div>
-	<!--section 2-->
+	<!--section 2 not quite right yet-->
 	<div id="intro" class="section black">
 		<div class="container">
 			<div class="row">
 				<div class="col s12">
-					<h2 class="center header" style="color:white;">good things happens to those who wait, </h2>
-					<h3 class="center header" style="color:white;">but only those left by those who hustle</h3>
+					<h2 class="center header" style="color:white;">good things happens to those who wait,<br>but only those left by those who hustle </h2>
 				</div>
 			</div>
 			<div class="row center">
 				<div class="col s12 m12 13">
-					<img class="responsive-img" src="images/sammy.JPG" style="width:25vh;height:25vh" >
+					<img class="responsive-img" src="images/sammy.JPG" >
 				</div>
-				<div class="col s12 m12 offset-11 18">
+				<dic class="col s12 m12 offset-l1 l8">
 					<h5 class="center" style="color:white;" >
 						Sammy Gasana<b>About Me</b>
 					</h5>
-					<p style="color:white;">i was born among the stars<br>in the heart of a dying sun</p>
-					<i>shoot for the moon because even if you miss you'll still end up in the stars</i>
-				</div>
+					<p>i was born among the stars in the heart of a dying sun</p>
+					<p>and also i'm a science addict and amateur web develloper i also graduated with an <br>information management degree at auca</p>
+					<i>"shoot for the moon because even if you miss you'll still end up in the stars"</i>
+				</dic>
 			</div>
 		</div>
 	</div>
+
 	<!--section 3-->
-	<!--parallax effects--><!-- has bugs -->
+	<!--parallax effects-->
 	<div id="p1" class="parallax-container">
 		<div class="parallax">
-			<img src="images/orb.jpeg" style="width: 100%;height:50%;">
+			<img src="https://user-images.githubusercontent.com/26179770/37276909-311e65d2-2609-11e8-9fb9-fa2a6838b02f.png" >
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col s12 center white">
-					<h1>Words of wisdom</h1>
-					<h4>Nothing in this world can<br> take the place of<br> persistence. <br>Talent will not: nothing is<br> more common than unsuccessful<br> men with talent.<br> Genius will not; unrewarded genius<br> is almost a proverb. Education will not:<br> the world is full of educated derelicts.<br> Persistence and determination alone<br> are omnipotent.<br> Calvin Coolidge
-					</h4>
+				<div class="col s12 center white-text text-darken-3">
+					<h3>Words of wisdom</h3>
+					<h5>Nothing in this world can<br> take the place of<br> persistence. <br>Talent will not: nothing is<br> more common than unsuccessful<br> men with talent.<br> Genius will not; unrewarded genius<br> is almost a proverb. Education will not:<br> the world is full of educated derelicts.<br> Persistence and determination alone<br> are omnipotent.<br> Calvin Coolidge
+					</h5>
 				</div>
 			</div>
 		</div>
-	</div>
-	<script>
-	$(Document).ready(function(){
-		$('.parallax').parallax();
-	});
-	</script>
+	</div> 
+	
 	<!--section 4-->
 	<!--projects it'll have --><!--still has bugs-->
 	<div id="work" class="section" style="background-color:#141414;">
@@ -175,6 +166,18 @@
 				
 			</div>
 		</div>
+	</div>
+		<!-- bouttons ki bougent pas pour facebook etc.. --><!-- has bugs -->
+		<div class="fixed-action-btn vertical">
+		<a class="btn-floating btn-large  blue-grey darken-4">
+			<i class="fa fa-globe"></i>
+		</a>
+		<ul>
+			<li><a class="btn-floating  blue darken-4"><i class="fa fa-facebook"></i></a></li>
+			<li><a class="btn-floating cyan lighten-1"><i class="fa fa-twitter"></i></a></li>
+			<li><a class="btn-floating grey darken-3"> <i class="fa fa-github"></i></a></li>
+			<li><a class="btn-floating blue-grey lighten-1"><i class="fa fa-linkedin"></i></a></li>
+		</ul>
 	</div>
 	<footer class="section page-footer black">
 			<div class="container center-align">
