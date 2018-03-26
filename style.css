@@ -1,7 +1,6 @@
 #landing{
     height: 100vh;
     background-image: url("images/orb.jpeg");
-   
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -10,6 +9,14 @@
 }
 #work{
     background-color:rgb(61,61,61);;
+}
+#skills{
+    background-image: url("images/controller.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
 #intro{
     margin-top: 50px;
@@ -23,4 +30,7 @@ body{
 }
 p1{
     height: 350px;
+}
+.layout{
+    float: right;
 }
