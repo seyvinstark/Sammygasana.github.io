@@ -10,6 +10,11 @@
 #work{
     background-color:rgb(61,61,61);;
 }
+#sam{
+   width:85px;
+   height:45px;
+    
+}
 #skills{
     background-image: url("images/controller.jpg");
     background-attachment: fixed;
